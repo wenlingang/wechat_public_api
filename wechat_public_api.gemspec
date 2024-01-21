@@ -30,11 +30,12 @@ Gem::Specification.new do |spec|
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_paths = ["lib"]
 
+  spec.add_dependency 'httparty'
+  spec.add_dependency 'json'
+  spec.add_dependency 'redis'
+  spec.add_dependency 'rest-client'
+
   spec.add_development_dependency "bundler", "~> 1.16"
   spec.add_development_dependency "rake", "~> 10.0"
-  spec.add_development_dependency "redis"
-  spec.add_development_dependency "httparty"
-  spec.add_development_dependency "json"
-  spec.add_development_dependency "rest-client"
   spec.add_development_dependency 'unf_ext', '~> 0.0.7.5'
 end

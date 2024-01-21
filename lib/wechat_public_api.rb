@@ -1,3 +1,7 @@
+require 'redis'
+require 'httparty'
+require 'json'
+require 'rest-client'
 require "wechat_public_api/version"
 require "wechat_public_api/menu"
 require "wechat_public_api/kf_message"
